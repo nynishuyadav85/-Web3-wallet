@@ -1,0 +1,103 @@
+/* SolanaWallet.css */
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+}
+
+.wallet-ui {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.wallet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.wallet-header h1 {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #00feca, #3eecac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add-btn {
+  background: linear-gradient(to right, #00feca, #3eecac);
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 10px;
+  color: #0f0c29;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.add-btn:hover {
+  transform: scale(1.05);
+}
+
+.wallet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.wallet-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 255, 234, 0.1);
+  transition: all 0.3s ease;
+}
+
+.wallet-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 30px rgba(0, 255, 234, 0.15);
+}
+
+.wallet-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.wallet-id {
+  font-weight: bold;
+  color: #00feca;
+}
+
+.copy-btn {
+  background-color: transparent;
+  color: #00ffd5;
+  border: 1px solid #00ffd5;
+  padding: 4px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.copy-btn:hover {
+  background-color: #00ffd5;
+  color: #000;
+}
+
+.wallet-key {
+  font-family: monospace;
+  font-size: 0.9rem;
+  word-break: break-word;
+  color: #e1e1e1;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 12px;
+  border-radius: 10px;
+}
