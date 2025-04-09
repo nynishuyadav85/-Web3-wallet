@@ -3,6 +3,7 @@ import './App.css';
 import { generateMnemonic } from 'bip39';
 import { SolanaWallet } from './components/SolanaWallet';
 import { EthWallet } from './components/EthWallet';
+import FetchBalance from './components/FetchBalance';
 
 function App() {
   const [mnemonic, setMnemonic] = useState("");
@@ -27,7 +28,7 @@ function App() {
         readOnly
         placeholder="Your seed phrase will appear here..."
       />
-
+      <FetchBalance />
       <div className="wallets-section">
         <div className="wallet-box">
           <SolanaWallet mnemonic={mnemonic} />
