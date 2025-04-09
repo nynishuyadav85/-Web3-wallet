@@ -29,7 +29,7 @@ export function SolanaWallet({ mnemonic }) {
     return (
         <div className="wallet-ui">
             <div className="wallet-header">
-                <h1>🚀 Solana Wallet Generator</h1>
+                <h1>🚀 Solana Wallet</h1>
                 <button className="add-btn" onClick={addWallet}>
                     ➕ Generate New Wallet
                 </button>
