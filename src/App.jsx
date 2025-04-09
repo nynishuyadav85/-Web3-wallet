@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1 className="title">🪙 Wallet Seed Generator</h1>
+      <h1 className="title">🪙 Solana & ETH</h1>
 
       <button className="generate-btn" onClick={handleGenerateMnemonic}>
         Generate Seed
@@ -28,8 +28,14 @@ function App() {
         placeholder="Your seed phrase will appear here..."
       />
 
-      <SolanaWallet mnemonic={mnemonic} />
-      <EthWallet mnemonic={mnemonic} />
+      <div className="wallets-section">
+        <div className="wallet-box">
+          <SolanaWallet mnemonic={mnemonic} />
+        </div>
+        <div className="wallet-box">
+          <EthWallet mnemonic={mnemonic} />
+        </div>
+      </div>
     </div>
   );
 }
